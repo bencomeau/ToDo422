@@ -8,10 +8,10 @@ html
   body
     nav()
       div(class="nav nav-tabs", id="nav-tab", role="tablist")
-        a(class="nav-item nav-link active", data-toggle="tab", href="/", role="tab") Go Home
-        a(class="nav-item nav-link", data-toggle="tab", href="/ben", role="tab") Ben's page
-        a(class="nav-item nav-link", data-toggle="tab", href="/anna", role="tab") Anna's page
-        a(class="nav-item nav-link", data-toggle="tab", href="/anastasia", role="tab") Anastasia's page
+        a(class="nav-item nav-link", class={active: currentUrl === '/'}, data-toggle="tab", href="/", role="tab") Go Home
+        a(class="nav-item nav-link", class={active: currentUrl === '/ben'}, data-toggle="tab", href="/ben", role="tab") Ben's page
+        a(class="nav-item nav-link", class={active: currentUrl === '/anna'}, data-toggle="tab", href="/anna", role="tab") Anna's page
+        a(class="nav-item nav-link", class={active: currentUrl === '/anastasia'}, data-toggle="tab", href="/anastasia", role="tab") Anastasia's page
       
     block content
 
